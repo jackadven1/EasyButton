@@ -8,7 +8,7 @@ Pybutton is used to create button objects from class objects defined in the file
 To create a button object, ```import pybutton```, and set ```my_var = pybutton.button_object()```. No object requires values to be passed to it to initiate, though such will be required to make the button usable. Below is a list of the button objects; then comes the object's methods — the functions that can be called upon the button to make it function — and what they do. Each method is followed by the values that can be passed to it and the same's defaults.
 
 * rect()<br>
-  Rectangular button object.
+  Rectangular button object.<br>
     *```__init__(pos=(0, 0), width=100, height=50, text='', bg=(255, 255, 255), fg=(0, 0, 0), font='timesnewroman', pixel=False, thickness=0, command=None, border=0, margin=10, bc=(255, 0, 0), hover_bg=None, hover_fg=None, hover_border=5, hover_bc=(0, 255, 0), hover_text=None, hover_margin=None, hover_font=None, hover_pixel=False, image=None, hover_image=None)```<br>
     This function is run upon creating the button object; it stores the buttons properties.
       * ```pos = (0, 0)``` Position of top-left corner of button object
