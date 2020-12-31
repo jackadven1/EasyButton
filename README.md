@@ -15,7 +15,7 @@ Rectangular button object.<br>
     * ```width = 100``` Width
     * ```height = 50``` Height
     * ```border = 0``` Thickness of border with which to wrap button
-    * ```text = ""``` Text to display on butto; defaults to no text
+    * ```text = ""``` Text to display on button; defaults to no text
     * ```font = "timesnewroman"``` Font to use on text \[Add exception for if font is not found\]
     * ```pixel = False``` Pixelate text or not
     * ```margin = 10``` Margin of spacing to put between text and border/button edge; negative value blows text out of button
