@@ -27,6 +27,8 @@ setup(
 		"Topic :: Education :: Games/Entertainment",
 		"Natural Language :: English",
 		"License :: OSI Approved :: MIT License",
+		"Operating System :: Miscrosoft :: Windows",
+		"Operating System :: Microsoft :: Windows :: Windows 10",
 		"Programming Language :: Python 3 :: Only",
 		"Programming Language :: Python 3",
 		"Programming Language :: Python 3.5",
