@@ -19,7 +19,7 @@ Rectangular button object.<br>
     * ```font = "timesnewroman"``` Font to use on text
     * ```pixel = False``` Pixelate text or not
     * ```margin = 10``` Margin of spacing to put between text and border/button edge; negative value blows text out of button
-    * ```image = None``` Image to display on button background, behind text; will be automatically scaled smaller — not larger — to fit like text using ```margin```; takes either image file path or predefined PyGame Image object — note that the former sometimes fails, and is not advised; defaults to no image
+    * ```image = None``` Image to display on button background, behind text; will be automatically scaled smaller — not larger — to fit using ```margin```, like the ```text```; takes either image file path or predefined PyGame Image object — note that the former sometimes fails, and is not advised; defaults to no image
     * ```bg = (255, 255, 255)``` Background color of button; defaults to black
     * ```bc = (255, 0, 0)``` Border color; defaults to red
     * ```fg = (0, 0, 0)``` Foreground (text) color; defaults to white
