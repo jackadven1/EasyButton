@@ -5,7 +5,7 @@ PyButton is used to create button objects from class objects defined in the ```p
 
 # Button Class Objects
 
-To create a button object, ```import pybutton```, and set ```my_button = pybutton.button_object()```. No object requires values to be passed to it to initiate, though such will be required to make the button usable. Below is a list of the button objects; then comes a bulleted list of the object's methods — the functions that can be called upon the button to make it function — and what they do. Each method is followed by a sublist of the values that can be passed to it and the same's defaults. The final bullet point is certain attributes of the whole class that are not covered by the method documentation but may be of interest to the programmer; not all other attributes are present, however.
+To create a button object, ```import pybutton```, and set ```my_button = pybutton.button_object()```. No object requires values to be passed to it to initiate, though such will be required to make the button usable. Following are headings for each button object; then comes a bulleted list of the object's methods — the functions that can be called upon the button to make it operate — and what they do. Each method is followed by a sublist of the values that can be passed to it and the same's defaults. The final bullet point is another sublist, of certain attributes of the whole class that are not covered by the method documentation, but may be of interest to the programmer; not all other attributes are present, however.
 
 ## rect()<br>
 Rectangular button object.<br>
