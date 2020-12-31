@@ -3,6 +3,7 @@ try:
 except:
     raise NameError("module 'PyGame' not found")
 from pygame.locals import *
+import warnings
 
 __version__ = "0.1"
 
@@ -18,6 +19,7 @@ def blit_text(message, x, y):
     screen.blit(message, (x, y))
 
 def text_object(message, font, size, color, quality):
+    print(font)
     font = pygame.font.SysFont(font, size)
     message = font.render(message, quality, color)
     return message
@@ -26,8 +28,6 @@ def text_object(message, font, size, color, quality):
 class rect():
     def __init__(self, pos = (0, 0), width = 100, height = 50, text = "", bg = (255, 255, 255), fg = (0, 0, 0), font = "timesnewroman", pixel = False, thickness = 0, command = None, border = 0, margin = 10, bc = (255, 0, 0), hover_bg = None, hover_fg = None, hover_border = 5, hover_bc = (0, 255, 0), hover_text = None, hover_margin = None, hover_font = None, hover_pixel = False, image = None, hover_image = None):
         self.pos = pos
-        #if(not (type(self.pos) == list and type(self.pos[0]) == int and type(self.pos[1]) == int)):
-            #raise TypeError("self.pos must be list of two intergers for x and y position")
         if(not type(self.pos) == list and not type(self.pos) == tuple):
             raise TypeError("self.pos must be 'list' or 'tuple'")
         if(not type(self.pos[0]) == int or not type(self.pos[1]) == int):
@@ -71,9 +71,12 @@ class rect():
         self.font = font
         if(not type(self.font) == str):
             raise TypeError("self.font must be 'str'")
+        if(self.font not in pygame.font.get_fonts()):
+            warnings.warn("'" + self.font + "' not found in PyGame 'fonts'; defaulting to 'timesnewroman'")
+            self.font = "timesnewroman"
         self.pixel = not pixel
         if(not type(self.pixel) == bool):
-            raise TypeError("self.pixel must be 'bool'")
+            warnings.warn("self.pixel must be 'bool'")
         self.hover_pixel = not hover_pixel
         if(not type(self.hover_pixel) == bool):
             raise TypeError("self.hover_pixel must be 'bool'")
@@ -163,6 +166,9 @@ class rect():
             self.hover_font = hover_font
             if(not type(self.hover_bg) == text):
                 raise TypeError("self.hover_text must be 'str'")
+            if(self.font not in pygame.font.get_fonts()):
+                warnings.warn("'" + self.hover_font + "' not found in PyGame 'fonts'; defaulting to 'timesnewroman'")
+                self.hover_font = "timesnewroman"
     def update(self):
             self.image_object = None
             if(self.hovering == True):
