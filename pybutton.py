@@ -9,7 +9,7 @@ __version__ = "0.1"
 
 def intro():
     print("PyButton — easily create interactive buttons in PyGame. Created by William DeForest Halsted IV; @jackadven on PyPi, @jackadven on Scratch.")
-    print("PyButton source website: https://github.com/jackadven1/PyButton")
+    print("PyButton source website and documentation: https://github.com/jackadven1/PyButton")
 
 def blit_text(message, x, y):
     screen.blit(message, (x, y))
