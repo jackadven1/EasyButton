@@ -16,7 +16,7 @@ Rectangular button object.<br>
     * ```height = 50``` Height
     * ```border = 0``` Thickness of border with which to wrap button
     * ```text = ""``` Text to display on button; defaults to no text
-    * ```font = "timesnewroman"``` Font to use on text \[Add exception for if font is not found\]
+    * ```font = "timesnewroman"``` Font to use on text
     * ```pixel = False``` Pixelate text or not
     * ```margin = 10``` Margin of spacing to put between text and border/button edge; negative value blows text out of button
     * ```image = None``` Image to display on button background, behind text; will be automatically scaled to size like text using ```margin```; takes either image file path or predefined PyGame Image object — note that the former sometimes fails, and is not advised; defaults to no image
