@@ -10,7 +10,7 @@ To create a button object, ```import pybutton```, and set ```my_var = pybutton.b
 ## rect()<br>
 Rectangular button object.<br>
   * ```__init__(pos=(0, 0), width=100, height=50, text='', bg=(255, 255, 255), fg=(0, 0, 0), font='timesnewroman', pixel=False, thickness=0, command=None, border=0, margin=10, bc=(255, 0, 0), hover_bg=None, hover_fg=None, hover_border=5, hover_bc=(0, 255, 0), hover_text=None, hover_margin=None, hover_font=None, hover_pixel=False, image=None, hover_image=None)```<br>
-    This function is run upon creating the button object; it stores the buttons properties.
+    This method is run upon creating the button object; it stores the buttons properties.
     * ```pos = (0, 0)``` Position of top-left corner of button object
     * ```width = 100``` Width
     * ```height = 50``` Height
@@ -34,3 +34,6 @@ Rectangular button object.<br>
     * ```hover_bg = None``` Background color of button while the same is touching the mouse cursor; defaults to ```bg```
     * ```hover_bc = None``` Border color while button is touching mouse cursor; defaults to ```bc```
     * ```hover_fg = None``` Foreground (text) color while button is touching the mouse cursor; defaults to ```fg```
+    
+ * ```update(self)```<br>
+ This method updates the button object itself so as to make it display updated properties. It is automatically run by the ```check_hover``` method when a change in ```hovering``` status is detected. However, if the program mandatorally changes one of the buttons properties (exempli gratia ```my_button.width = new_width```), then the ```update``` method _must_ be called in order to update the buttons Surface so it will display properly; otherwise, the button remains as before until the ```update``` method is run by the ```check_hover``` method or called by the program.
