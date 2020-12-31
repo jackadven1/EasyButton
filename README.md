@@ -25,14 +25,14 @@ Rectangular button object.<br>
     * ```fg = (0, 0, 0)``` Foreground (text) color; defaults to white
     * ```thickness = 0``` Thickness of button background; does not inhibit placement of objects of the button; value less than width/height results in transparent button center; defaults to solid background
     * ```command = None``` Function to execute when button is clicked
-    * ```hover_border = None``` Thickness of border to wrap button with while the same is touching the mouse cursor; defaults to ```border```
+    * ```hover_border = 5``` Thickness of border to wrap button with while the same is touching the mouse cursor
     * ```hover_text = None``` Text to display when button is touching mouse cursor; defaults to ```text```
     * ```hover_font = None``` Font to use on text displayed while button is touching the mouse cursor; defaults to ```text```
     * ```hover_pixel = False``` Pixelate the text displayed when button is touching the mouse cursor or not
     * ```hover_margin = None``` Margin of spacing to put between text and border/button edge while the same is touching the mouse cursor; negative value blows text out of button; defaults to ```margin```
     * ```hover_image = None``` Image to display on button background, behind text, when button is touching the mouse cursor; will automatically be scaled to size like text using ```hover_margin```; takes either image file path or predefined PyGame Image object — note that the former sometimes fails, and is not advised; defaults to ```image```
     * ```hover_bg = None``` Background color of button while the same is touching the mouse cursor; defaults to ```bg```
-    * ```hover_bc = None``` Border color while button is touching mouse cursor; defaults to ```bc```
+    * ```hover_bc = (0, 255, 0)``` Border color while button is touching mouse cursor; defaults to green
     * ```hover_fg = None``` Foreground (text) color while button is touching the mouse cursor; defaults to ```fg```
     
  * ```update(self)```<br>
