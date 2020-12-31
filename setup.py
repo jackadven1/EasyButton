@@ -18,8 +18,9 @@ setup(
   	description = "Easily create interactible button objects in PyGame with just a few short lines of code.",
   	long_description = long_description,
   	long_description_content_type = "text/markdown",
+	summary = "A module containing Python class objects used to create and use interactible buttons for PyGame with just a few lines of code."
   	url = "https://github.com/jackadven1/PyButton",
-  	author = "William Deforest Halsted IV; @jackadven1",
+  	author = "William Deforest Halsted IV; @jackadven1 on GitHub and PyPi; @jackadven on Scratch",
   	author_email = ""
   	classifiers = [
 		"Development Status :: 5 - Production/Stable",
@@ -38,12 +39,18 @@ setup(
 	]
 	keywords = "pygame, pygame-games, pygame-application, student, easy-to-use, simple, interface, menu, graphical-user-interface, graphical-interface, button",
 	packages = find_packages(where = "src"),
-	python_requires = ">= 3.5, <4",
-	install_requires = ["pygame"]
+	python_requires = ">= 3.0",
+	install_requires = ["pygame"],
+	package_data = [
+		"example.py",
+		"README.md"
+	],
 	project_urls = {
-		"Funding": "https://donate.pypi.org",
-        "Say Thanks!": "https://saythanks.io/to/william%40thehalsteds.net",
-        "Source": "https://github.com/pypa/sampleproject/"
+        	"Module Source" : "https://github.com/pypa/sampleproject/",
+		"Author on GitHub" : "https://github.com/jackadven1",
+		"Author on Scratch" : "https://scratch.mit.edu/users/jackadven/",
+        	"Say Thanks for This Module" : "https://saythanks.io/to/william%40thehalsteds.net",
+		"PyPi Module Team Funding" : "https://donate.pypi.org"
 	}
 )
 license_files = LICENSE.md
