@@ -36,7 +36,7 @@ Rectangular button object.<br>
     * ```hover_fg = None``` Foreground (text) color while button is touching the mouse cursor; defaults to ```fg```
     
  * ```update(self)```<br>
- This method updates the button object itself so as to make it display updated properties. It is automatically run by the ```check_hover``` method when a change in ```hovering``` status is detected. However, if the program mandatorally changes one of the buttons properties (exempli gratia ```my_button.width = new_width```), then the ```update``` method _must_ be called in order to update the buttons Surface so it will display properly; otherwise, the button remains as before until the ```update``` method is run by the ```check_hover``` method or called by the program.
+ This method updates the button object's ```surface``` attribute so as to make it display updated properties. It is automatically run by the ```check_hover``` method when a change in ```hovering``` status is detected. However, if the program mandatorally changes one of the buttons properties (exempli gratia ```my_button.width = new_width```), then the ```update``` method _must_ be called in order to update the buttons Surface so it will display properly; otherwise, the button remains as before until the ```update``` method is run by the ```check_hover``` method or called by the program.
  
 * ```draw(self, destination```<br>
  This method blits the button onto a PyGame Surface.
@@ -62,3 +62,6 @@ This method checks whether or not the button has been clicked, and returns the a
 
 * ```get_fonts(self)``` <br>
 This method calls the PyGame ```font.get_fonts``` method and returns a list of all the available fonts that can be given as values for ```font``` and ```hover_font```.
+
+* Attributes
+	* ```surface``` The PyGame surface object that contains the image of the button which is updated by the ```update``` method and blitted to a PyGame Surface object by the ```draw``` method.
