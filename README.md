@@ -23,7 +23,7 @@ Rectangular button object.<br>
     * ```bg = (255, 255, 255)``` Background color of button; defaults to black
     * ```bc = (255, 0, 0)``` Border color; defaults to red
     * ```fg = (0, 0, 0)``` Foreground (text) color; defaults to white
-    * ```thickness = 0``` Thickness of button background; does not inhibit placement of objects of the button; defaults to solid background
+    * ```thickness = 0``` Thickness of button background; does not inhibit placement of objects of the button; value less than width/height results in transparent button center; defaults to solid background
     * ```command = None``` Function to execute when button is clicked
     * ```hover_border = None``` Thickness of border to wrap button with while the same is touching the mouse cursor; defaults to ```border```
     * ```hover_text = None``` Text to display when button is touching mouse cursor; defaults to ```text```
