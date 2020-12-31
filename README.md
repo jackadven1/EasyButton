@@ -37,3 +37,28 @@ Rectangular button object.<br>
     
  * ```update(self)```<br>
  This method updates the button object itself so as to make it display updated properties. It is automatically run by the ```check_hover``` method when a change in ```hovering``` status is detected. However, if the program mandatorally changes one of the buttons properties (exempli gratia ```my_button.width = new_width```), then the ```update``` method _must_ be called in order to update the buttons Surface so it will display properly; otherwise, the button remains as before until the ```update``` method is run by the ```check_hover``` method or called by the program.
+ 
+* ```draw(self, destination```<br>
+ This method blits the button onto a PyGame Surface.
+	* ```destination``` The PyGame Surface that the button is to be drawn to
+  
+* ```hover(self, point)```<br>
+This method checks to see if the button is touching the mouse cursor; if it is, it updates the button's Surface to display the values specially entered for when the button is being hovered over.
+	* ```point``` A tuple or list containing the ```x``` and ```y``` positions of the mouse
+
+* ```check_hover(self, point)```<br>
+This method checks to see whether the button is touching the mouse cursor and returns the according boolean value.
+	* ```point``` A tuple or list containing the ```x``` and ```y``` positions of the mouse
+
+* ```click(self, point, down)```<br>
+This method checks whether or not the button has been clicked. If it has, then it executes the ```command``` function attribute of the button.
+	* ```point``` A tuple or list containing the ```x``` and ```y``` positions of the mouse
+	* ```down``` A boolean value stating whether or not the mouse is down
+
+* ```check_click(self, point, down)```<br>
+This method checks whether or not the button has been clicked, and returns the according boolean value.
+	* ```point``` A tuple or list containing the ```x``` and ```y``` positions of the mouse
+	* ```down``` A boolean value stating whether or not the mouse is down
+
+* ```get_fonts(self)``` <br>
+This method calls the PyGame ```font.get_fonts``` method and returns a list of all the available fonts that can be given as values for ```font``` and ```hover_font```.
