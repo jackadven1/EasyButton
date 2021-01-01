@@ -3,13 +3,13 @@ Easily create interactable button objects in PyGame with just a few short lines 
 
 EasyButton is used to create button objects from class objects defined in the ```easy_button.py``` module file. These buttons are fully customizable; can be updated and moved in-execution of code; and contain several methods for displaying hover effects and executing commands when clicked. As of this first launch version, the only button object is the 'rect' rectangle button. This module is not a professional product; rather, it is made by a student for other students as an alternative to the tedious, excessive amount of code it takes to create a working, interactive button in PyGame.
 
-If you would like to Say Thanks for this project, then please do so on my [Say Thanks page](https://saythanks.io/to/william%40thehalsteds.net "Say Thanks page").
+If you would like to Say Thanks for this project, then please [https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg](https://saythanks.io/to/william%40thehalsteds.net "Say Thanks page").
 
 # Button Class Objects
 
-To create a button object, ```import pybutton```, and set ```my_button = pybutton.button_object()```. No object requires values to be passed to it to initiate, though such will be required to make the button usable. Following are headings for each button object; then comes a bulleted list of the object's methods — the functions that can be called upon the button to make it operate — and what they do. Each method is followed by a sublist of the values that can be passed to it and the same's defaults. The final bullet point is another sublist, of certain attributes of the whole class that are not covered by the method documentation, but may be of interest to the programmer; not all other attributes are present, however.
+To create a button object, ```import easy_button```, and set ```my_button = easy_button.button_object()```. No object requires values to be passed to it to initiate, though such will be required to make the button usable. Following are headings for each button object; then comes a bulleted list of the object's methods — the functions that can be called upon the button to make it operate — and what they do. Each method is followed by a sublist of the values that can be passed to it and the same's defaults. The final bullet point is another sublist, of certain attributes of the whole class that are not covered by the method documentation, but may be of interest to the programmer; not all other attributes are present, however.
 
-## PyButton Attributes<br>
+## EasyButton Attributes<br>
 Variables of the PyButton module that do not belong to any of its subclasses.<br>
   * ```__version__``` A variable that contains the version of PyButton installed in your directory; the version that is being used.
 
