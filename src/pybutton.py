@@ -11,6 +11,11 @@ def intro():
     print("PyButton — easily create interactive buttons in PyGame. Created by William DeForest Halsted IV; @jackadven on PyPi, @jackadven on Scratch.")
     print("PyButton source website and documentation: https://github.com/jackadven1/PyButton")
 
+'''def blit_text(message, x, y, color, font, size, quality = True):
+    font = pygame.font.SysFont(font, size)
+    message = font.render(message, quality, color)
+    screen.blit(message,(x, y))'''
+
 def blit_text(message, x, y):
     screen.blit(message, (x, y))
 
@@ -152,7 +157,7 @@ class rect():
             self.hover_margin = margin
         else:
             self.hover_margin = hover_margin
-            if(not type(self.hover_bg) == int):
+            if(not type(self.hover_margin) == int):
                 raise TypeError("self.hover_margin must be 'int'")
         if(hover_font == None):
             self.hover_font = font
@@ -166,26 +171,30 @@ class rect():
     def update(self):
             self.image_object = None
             if(self.hovering == True):
-                if(self.text_info[4] != self.text):
+                if(self.text_info[4] != self.hover_text):
+                    self.text_info[1] = 0
+                    self.text_info[2] = 0
                     self.text_info[3] = 0
-                    while self.text_info[1] < self.width - self.border // 2 - self.margin and self.text_info[2] < self.height - self.border // 2 - self.margin:
+                    while self.text_info[1] < self.width - self.hover_border * 2 - self.hover_margin and self.text_info[2] < self.height - self.hover_border * 2 - self.hover_margin:
                         self.text_info[3] = self.text_info[3] + 1
-                        self.text_object = text_object(self.text, self.font, self.text_info[3], self.fg, self.pixel)
+                        self.text_object = text_object(self.hover_text, self.hover_font, self.text_info[3], self.hover_fg, self.hover_pixel)
                         self.text_info[1] = self.text_object.get_width()
                         self.text_info[2] = self.text_object.get_height()
                 if(self.image != None):
                     scale = 1
                     image = self.image
-                    while image.get_width() > self.width - self.border // 2 - self.margin or image.get_height() > self.width - self.border // 2 - self.margin:
+                    while image.get_width() > self.width - self.hover_border * 2 - self.hover_margin or image.get_height() > self.width - self.hover_border * 2 - self.hover_margin:
                         image = pygame.transform.scale(self.image, (round(scale * self.image.get_width()), round(scale * self.image.get_height())))
                         scale = scale - .05
                     self.image_object = image
             else:
-                if(self.text_info[4] != self.hover_text):
+                if(self.text_info[4] != self.text):
+                    self.text_info[1] = 0
+                    self.text_info[2] = 0
                     self.text_info[3] = 0
-                    while self.text_info[1] < self.width - self.hover_border // 2 - self.hover_margin and self.text_info[2] < self.height - self.hover_border // 2 - self.hover_margin:
+                    while self.text_info[1] < self.width - self.border * 2 - self.margin and self.text_info[2] < self.height - self.border * 2 - self.margin:
                         self.text_info[3] = self.text_info[3] + 1
-                        self.text_object = text_object(self.hover_text, self.hover_font, self.text_info[3], self.hover_fg, self.hover_pixel)
+                        self.text_object = text_object(self.text, self.font, self.text_info[3], self.fg, self.pixel)
                         self.text_info[1] = self.text_object.get_width()
                         self.text_info[2] = self.text_object.get_height()
                 if(self.hover_image != None):
@@ -211,8 +220,12 @@ class rect():
         destination.blit(self.surface, (self.pos[0], self.pos[1]))
     def hover(self, point):
         if(pygame.Rect(self.pos[0], self.pos[1], self.width, self.height).collidepoint(point) == True):
+            if(self.hovering != True):
+                self.text_info[4] = None
             self.hovering = True
         else:
+            if(self.hovering != False):
+                self.text_info[4] = None
             self.hovering = False
     def check_hover(self, point):
         if(pygame.Rect(self.pos[0], self.pos[1], self.width, self.height).collidepoint(point) == True):
