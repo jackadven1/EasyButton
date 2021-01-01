@@ -10,8 +10,8 @@ If you would like to Say Thanks for this project, then please [![Say Thanks Butt
 To create a button object, ```import easy_button```, and set ```my_button = easy_button.button_object()```. No object requires values to be passed to it to initiate, though such will be required to make the button usable. Following are headings for each button object; then comes a bulleted list of the object's methods — the functions that can be called upon the button to make it operate — and what they do. Each method is followed by a sublist of the values that can be passed to it and the same's defaults. The final bullet point is another sublist, of certain attributes of the whole class that are not covered by the method documentation, but may be of interest to the programmer; not all other attributes are present, however.
 
 ## EasyButton Attributes<br>
-Variables of the PyButton module that do not belong to any of its subclasses.<br>
-  * ```__version__``` A variable that contains the version of PyButton installed in your directory; the version that is being used.
+Variables of the EasyButton module that do not belong to any of its subclasses.<br>
+  * ```__version__``` A variable that contains the version of EasyButton installed in your directory; the version that is being used.
 
 ## rect()<br>
 Rectangular button object.<br>
