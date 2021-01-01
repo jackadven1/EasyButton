@@ -11,7 +11,7 @@ To create a button object, ```import pybutton```, and set ```my_button = pybutto
 
 ## PyButton Attributes<br>
 Variables of the PyButton module and not any of its subclasses.<br>
-	* ```__version__``` A variable that contains the version of PyButton installed in your directory; the version that is being used.
+  * ```__version__``` A variable that contains the version of PyButton installed in your directory; the version that is being used.
 
 ## rect()<br>
 Rectangular button object.<br>
