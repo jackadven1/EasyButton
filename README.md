@@ -9,6 +9,10 @@ If you would like to Say Thanks for this project, then please do so on my [Say T
 
 To create a button object, ```import pybutton```, and set ```my_button = pybutton.button_object()```. No object requires values to be passed to it to initiate, though such will be required to make the button usable. Following are headings for each button object; then comes a bulleted list of the object's methods — the functions that can be called upon the button to make it operate — and what they do. Each method is followed by a sublist of the values that can be passed to it and the same's defaults. The final bullet point is another sublist, of certain attributes of the whole class that are not covered by the method documentation, but may be of interest to the programmer; not all other attributes are present, however.
 
+## PyButton Attributes<br>
+Variables of the PyButton module and not any of its subclasses.<br>
+	* ```__version__``` A variable that contains the version of PyButton installed in your directory; the version that is being used.
+
 ## rect()<br>
 Rectangular button object.<br>
   * ```__init__(pos=(0, 0), width=100, height=50, text='', bg=(255, 255, 255), fg=(0, 0, 0), font='timesnewroman', pixel=False, thickness=0, command=None, border=0, margin=10, bc=(255, 0, 0), hover_bg=None, hover_fg=None, hover_border=5, hover_bc=(0, 255, 0), hover_text=None, hover_margin=None, hover_font=None, hover_pixel=False, image=None, hover_image=None)```<br>
