@@ -1,4 +1,4 @@
-from pybutton import all *
+from easy_button import all *
 from examples import all*
 '''def main():
     #Entry point for the application script
