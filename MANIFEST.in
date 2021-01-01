@@ -1,13 +1,11 @@
 #include pyproject.toml
 
-# Include the README
-include *.md
+include *.md, *.py
 
-# Include the license file
 include LICENSE.txt
 
-# Include the data files
 recursive-include data *
 
-# Include the example file
 include example.py
+
+prune examples/sample?/build
