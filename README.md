@@ -12,6 +12,7 @@ To create a button object, ```import easy_button```, and set ```my_button = easy
 ## EasyButton Attributes<br>
 Variables of the EasyButton module that do not belong to any of its subclasses.<br>
   * ```__version__``` A variable that contains the version of EasyButton installed in your directory; the version that is being used.
+  * ```example()``` An example project that shows some button objects, how to use them, what they are capable of, and other extra actions that can be performed.
 
 ## rect()<br>
 Rectangular button object.<br>
