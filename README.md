@@ -42,7 +42,7 @@ Rectangular button object.<br>
     * ```hover_fg = None``` Foreground (text) color while button is touching the mouse cursor; defaults to ```fg```
     
  * ```update(self)```<br>
- This method updates the button object's ```surface``` attribute so as to make it display updated properties. It is automatically run by the ```check_hover``` method when a change in ```hovering``` status is detected. However, if the program mandatorally changes one of the buttons properties (exempli gratia ```my_button.width = new_width```), then the ```update``` method _must_ be called in order to update the buttons Surface so it will display properly; otherwise, the button remains as before until the ```update``` method is run by the ```check_hover``` method or called by the program.
+ This method updates the button object's ```surface``` attribute so as to make it display updated properties. It is automatically run by the ```check_hover``` method when a change in ```hovering``` status is detected, or the text it is displaying varies from the text it should be displaying.
  
 * ```draw(self, destination```<br>
  This method blits the button onto a PyGame Surface.
