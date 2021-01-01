@@ -13,7 +13,7 @@ here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / "README.md").read_text(encoding = "utf-8")
 
 setup(
-	name = "pybutton",
+	name = "easy_button",
   	version = "1.0.0",
   	description = "Easily create interactible button objects in PyGame with just a few short lines of code.",
   	long_description = long_description,
