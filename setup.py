@@ -24,7 +24,7 @@ setup(
   	author_email = "",
   	classifiers = [
 		"Development Status :: 5 - Production/Stable",
-		"Intended Audience :: Education"",
+		"Intended Audience :: Education",
 		"Topic :: Education :: Games/Entertainment",
 		"Natural Language :: English",
 		"License :: OSI Approved :: MIT License",
