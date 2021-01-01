@@ -50,6 +50,8 @@ setup(
 	packages = find_packages(where = "src"),
 	python_requires = ">= 3.0",
 	install_requires = ["pygame"],
+	packages = ["easy_button"],
+	package_dir = {"easy_button" : "src/easy_button"},
 	package_data = {
 		"easy_button" : ["example.py", "README.md"]
 	},
