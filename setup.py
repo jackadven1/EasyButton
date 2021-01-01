@@ -36,7 +36,7 @@ setup(
 		"Programming Language :: Python 3.6",
 		"Programming Language :: Python 3.7",
 		"Programming Language :: Python 3.8"
-	]
+	],
 	keywords = "pygame, pygame-games, pygame-application, student, easy-to-use, simple, interface, menu, graphical-user-interface, graphical-interface, button",
 	packages = find_packages(where = "src"),
 	python_requires = ">= 3.0",
