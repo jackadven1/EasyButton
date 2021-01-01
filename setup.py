@@ -18,7 +18,7 @@ setup(
   	description = "Easily create interactible button objects in PyGame with just a few short lines of code.",
   	long_description = long_description,
   	long_description_content_type = "text/markdown",
-	summary = "A module containing Python class objects used to create and use interactible buttons for PyGame with just a few lines of code."
+	summary = "A module containing Python class objects used to create and use interactible buttons for PyGame with just a few lines of code.",
   	url = "https://github.com/jackadven1/PyButton",
   	author = "William Deforest Halsted IV; @jackadven1 on GitHub and PyPi; @jackadven on Scratch",
   	author_email = ""
