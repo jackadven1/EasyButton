@@ -41,10 +41,9 @@ setup(
 	packages = find_packages(where = "src"),
 	python_requires = ">= 3.0",
 	install_requires = ["pygame"],
-	package_data = [
-		"example.py",
-		"README.md"
-	],
+	package_data = {
+		"easy_button" : ["example.py", "README.md"]
+	},
 	project_urls = {
         	"Module Source" : "https://github.com/pypa/sampleproject/",
 		"Author on GitHub" : "https://github.com/jackadven1",
