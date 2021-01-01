@@ -5,7 +5,7 @@ except:
 from pygame.locals import *
 import warnings
 
-__version__ = "0.1"
+__version__ = "1.0.0"
 
 def intro():
     print("PyButton — easily create interactive buttons in PyGame. Created by William DeForest Halsted IV; @jackadven on PyPi, @jackadven on Scratch.")
@@ -15,7 +15,6 @@ def blit_text(message, x, y):
     screen.blit(message, (x, y))
 
 def text_object(message, font, size, color, quality):
-    print(font)
     font = pygame.font.SysFont(font, size)
     message = font.render(message, quality, color)
     return message
@@ -40,7 +39,6 @@ class rect():
         self.image = image
         if(not type(self.image) == pygame.Surface and not type(self.image) == str and not self.image == None):
             raise TypeError("self.image must be pygame 'Surface' object or 'str'; 'Surface' object preferred")
-        print(self.image, type(self.image))
         if(type(self.image) == str):
             try:
                 self.image = pygame.image.load(image)
