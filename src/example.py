@@ -5,7 +5,7 @@ screen = pygame.display.set_mode((640,480))
 pygame.display.set_caption("PyButton Module Example")
 
 #Import PyButton:
-import pybutton
+import easy_button
 
 mouse = [0, 0, False]
 keys_down = []
@@ -15,7 +15,7 @@ def greeter():
     print("Hello World!")
 
 #Define button objects:
-button = pybutton.rect(margin = 5,
+button = easy_button.rect(margin = 5,
                        hover_margin = 10,
                        pos = (100, 100), #Tuple object — non-assignable
                        width = 150,
@@ -27,7 +27,7 @@ button = pybutton.rect(margin = 5,
                        command = greeter,
                        hover_bg = (255, 0, 255)
                        )
-movable_button = pybutton.rect(
+movable_button = easy_button.rect(
     pos = [400, 300], #List object — assingable
     width = 150,
     height = 25,
