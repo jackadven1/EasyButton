@@ -52,4 +52,4 @@ setup(
 		"PyPi Module Team Funding" : "https://donate.pypi.org"
 	}
 )
-license_files = LICENSE.md
+license_files = "LICENSE.md"
