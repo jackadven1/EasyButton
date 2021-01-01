@@ -25,7 +25,11 @@ setup(
   	classifiers = [
 		"Development Status :: 5 - Production/Stable",
 		"Intended Audience :: Education",
-		"Topic :: Education :: Games/Entertainment",
+		"Topic :: Education",
+		"Topic :: Games/Entertainment",
+		"Topic :: Multimedia :: Graphics :: Presentation",
+		"Topic :: Scientific/Engineering :: Human Machine Interfaces",
+		"Topic :: Software Development :: User Interfaces",
 		"Natural Language :: English",
 		"License :: OSI Approved :: MIT License",
 		"Operating System :: Microsoft :: Windows",
