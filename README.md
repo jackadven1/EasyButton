@@ -1,7 +1,7 @@
-# PyButton
+# EasyButton
 Easily create interactable button objects in PyGame with just a few short lines of code.
 
-PyButton is used to create button objects from class objects defined in the ```pybutton.py``` module file. These buttons are fully customizable; can be updated and moved in-execution of code; and contain several methods for displaying hover effects and executing commands when clicked. As of this first launch version, the only button object is the 'rect' rectangle button. This module is not a professional product; rather, it is made by a student for other students as an alternative to the tedious, excessive amount of code it takes to create a working, interactive button in PyGame.
+EasyButton is used to create button objects from class objects defined in the ```easy_button.py``` module file. These buttons are fully customizable; can be updated and moved in-execution of code; and contain several methods for displaying hover effects and executing commands when clicked. As of this first launch version, the only button object is the 'rect' rectangle button. This module is not a professional product; rather, it is made by a student for other students as an alternative to the tedious, excessive amount of code it takes to create a working, interactive button in PyGame.
 
 If you would like to Say Thanks for this project, then please do so on my [Say Thanks page](https://saythanks.io/to/william%40thehalsteds.net "Say Thanks page").
 
